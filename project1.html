@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+
+<body>
+    <header class="header">
+        <!-- left bar -->
+        <div class="left">
+            <img src="logo6.jpg" alt="">
+        </div>
+        <!-- center bar -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CLASSES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PRICING</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- right bar buttons -->
+        <div class="right">
+            <button class="btn">contact now</button>
+            <button class="btn">email now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>GYM REGISTRATION FORM</h1>
+        <?php 
+              echo $msg;
+        ?>
+        <form action="index.php" method="POST">
+            <div class="form-groups">
+                <input type="text" name="fullname" placeholder="enter your fullname">
+            </div>
+            <div class="form-groups">
+                <input type="text" name="address" placeholder="enter your home address">
+            </div>
+            <div class="form-groups">
+                <input type="text" name="phonenumber" placeholder="enter your phonenumber">
+            </div>
+            <div class="form-groups">
+                <input type="text" name="email" placeholder="enter your email">
+            </div>
+            <div class="form-groups">
+                <input type="text" name="weight" placeholder="enter your desired weight">
+            </div>
+            <div class="Gender">
+                Gender: Male <input type="radio" name="myGender"> FeMale
+                <input type="radio" name="myGender">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
