@@ -7,5 +7,3 @@ COPY . /usr/share/nginx/html/project1.html
 
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
-hello merge
-hy all
